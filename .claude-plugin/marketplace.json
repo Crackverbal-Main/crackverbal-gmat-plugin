@@ -1,0 +1,15 @@
+{
+  "name": "crackverbal",
+  "description": "CrackVerbal plugins for Claude: free GMAT practice from CrackVerbal's question bank.",
+  "owner": {
+    "name": "CrackVerbal",
+    "url": "https://www.crackverbal.com"
+  },
+  "plugins": [
+    {
+      "name": "crackverbal-gmat",
+      "source": "./",
+      "description": "Free GMAT Focus practice from CrackVerbal: real questions, a diagnostic, mistake review in CrackVerbal's method, and a study plan."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "crackverbal-gmat": {
+      "type": "http",
+      "url": "https://crackverbal-gmat-mcp.marketing-e89.workers.dev/mcp"
+    }
+  }
+}

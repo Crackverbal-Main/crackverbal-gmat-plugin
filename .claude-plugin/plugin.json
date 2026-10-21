@@ -1,0 +1,21 @@
+{
+  "name": "crackverbal-gmat",
+  "displayName": "CrackVerbal GMAT Prep",
+  "description": "Free GMAT Focus practice from CrackVerbal: real questions, timed sets, a diagnostic, mistake review in CrackVerbal's method, and a study plan.",
+  "version": "0.1.0",
+  "author": {
+    "name": "CrackVerbal",
+    "url": "https://www.crackverbal.com"
+  },
+  "homepage": "https://www.crackverbal.com",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "gmat",
+    "gmat focus",
+    "data insights",
+    "quant",
+    "verbal",
+    "test prep"
+  ],
+  "icon": "assets/icon.png"
+}
