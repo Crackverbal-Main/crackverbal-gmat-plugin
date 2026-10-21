@@ -21,3 +21,7 @@ End with options: a practice set on the focus type, review of misses, or a study
 ## If there are no results yet
 
 Say there's nothing to summarise yet and offer a diagnostic or a practice set.
+
+## If the CrackVerbal tools are unavailable
+
+If a CrackVerbal tool can't be called, don't write practice questions yourself or present any question as CrackVerbal's. Tell the student the CrackVerbal connector isn't connected: in Claude, open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it, then start a new chat. Meanwhile, offer what works without it: a study plan, or explaining a question they paste in.

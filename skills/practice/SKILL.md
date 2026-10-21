@@ -34,3 +34,7 @@ Give the score in one line, then accuracy and timing by question type from the t
 End with options: another set on the weakest type, a step up in difficulty if they scored 80% or more, or a study plan.
 
 If the tool says no unseen questions match, tell the student and offer a different difficulty or type.
+
+## If the CrackVerbal tools are unavailable
+
+If a CrackVerbal tool can't be called, don't write practice questions yourself or present any question as CrackVerbal's. Tell the student the CrackVerbal connector isn't connected: in Claude, open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it, then start a new chat. Meanwhile, offer what works without it: a study plan, or explaining a question they paste in.

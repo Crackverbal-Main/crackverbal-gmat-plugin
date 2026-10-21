@@ -27,3 +27,7 @@ Then two or three sentences on what the pattern suggests, using only the numbers
 Keep the `review_token`. Offer to walk through any missed question; when they accept, call `get_explanation` with the `review_token` and the question ID, and teach it the way the `review` skill describes.
 
 End with next-step options: practise the weakest type, review misses, or build a study plan.
+
+## If the CrackVerbal tools are unavailable
+
+If a CrackVerbal tool can't be called, don't write practice questions yourself or present any question as CrackVerbal's. Tell the student the CrackVerbal connector isn't connected: in Claude, open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it, then start a new chat. Meanwhile, offer what works without it: a study plan, or explaining a question they paste in.
