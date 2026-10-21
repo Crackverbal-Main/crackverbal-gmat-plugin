@@ -1,27 +1,28 @@
 ---
 name: progress
-description: Summarises the student's CrackVerbal GMAT results from this conversation, by question type, with what to work on next. Use when a student asks how they are doing, what their results are, or what to focus on.
+description: Shows the student's CrackVerbal GMAT progress, by question type, with what to work on next. Use when a student asks how they are doing, what their results are, how they have improved, or what to focus on.
 ---
 
 # Progress
 
-Results are not saved between conversations yet, so work from the `submit_answers` results in this conversation only. Say this once if the student asks about earlier sessions.
+## Saved progress (signed-in students)
 
-## Summarise
+Call `get_progress`. It returns every saved result across sessions: questions done, accuracy by question type, the last 14 days, and the focus type.
 
-1. Add up every `submit_answers` result in this conversation by question type: questions attempted, correct, accuracy, and time against target where timing was given.
-2. Lead with one line: total attempted and overall accuracy.
-3. Show a table: Question type · Attempted · Correct · Accuracy · Time vs target. Sort weakest first.
-4. Name the focus: the type with the lowest accuracy among those with at least 3 attempts. With fewer than 3 attempts in a type, say the sample is too small to judge.
+If the student isn't signed in, Claude shows them a CrackVerbal sign-in when you call it. If they'd rather not sign in, use this conversation's results instead (below), and mention once that signing in keeps results across sessions.
 
-Use only the numbers from the tool results. Don't estimate a GMAT score from practice accuracy; point the student to an official practice exam for that.
+Lead with one line: questions done and overall accuracy. Then a table, weakest first: Question type · Done · Accuracy · Last 14 days. Name the focus type the tool returned. Use only the numbers returned. Don't estimate a GMAT score from practice accuracy; point the student to an official practice exam for that.
+
+## This conversation only
+
+Without sign-in, add up the `submit_answers` results in this conversation by question type: attempted, correct, accuracy, and time against target where given. Same table. With fewer than 3 questions in a type, say the sample is too small to judge.
 
 End with options: a practice set on the focus type, review of misses, or a study plan.
 
 ## If there are no results yet
 
-Say there's nothing to summarise yet and offer a diagnostic or a practice set.
+Say there's nothing to show yet and offer a diagnostic or a practice set.
 
 ## If the CrackVerbal tools are unavailable
 
-If a CrackVerbal tool can't be called, don't write practice questions yourself or present any question as CrackVerbal's. Tell the student the CrackVerbal connector isn't connected: in Claude, open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it, then start a new chat. Meanwhile, offer what works without it: a study plan, or explaining a question they paste in.
+If a CrackVerbal tool can't be called, don't present any numbers as saved CrackVerbal progress. Tell the student the CrackVerbal connector isn't connected: in Claude, open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it, then start a new chat.

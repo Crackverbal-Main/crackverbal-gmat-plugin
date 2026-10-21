@@ -35,6 +35,10 @@ End with options: another set on the weakest type, a step up in difficulty if th
 
 If the tool says no unseen questions match, tell the student and offer a different difficulty or type.
 
+## Saving progress
+
+If `submit_answers` says the results were not saved, offer once, at the end of the set: "Want to save this to your CrackVerbal progress? It takes a free sign-in, and you can see how you improve across sessions." If they say yes, call `save_progress` with every `review_token` from this conversation. Claude will then show the student a CrackVerbal sign-in. If they decline, don't ask again in this conversation. Once signed in, results save automatically.
+
 ## If the CrackVerbal tools are unavailable
 
 If a CrackVerbal tool can't be called, don't write practice questions yourself or present any question as CrackVerbal's. Tell the student the CrackVerbal connector isn't connected: in Claude, open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it, then start a new chat. Meanwhile, offer what works without it: a study plan, or explaining a question they paste in.

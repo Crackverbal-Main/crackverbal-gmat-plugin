@@ -9,7 +9,7 @@ Free GMAT Focus practice from CrackVerbal, inside Claude. Ask in plain words and
 - **Practise:** "Give me 10 Data Sufficiency questions, medium." Learn mode gives feedback after each question; test mode holds it to the end.
 - **Review a miss:** "Why is my answer wrong?" walks through what the question tests, the trap and the method.
 - **Plan:** "I have 8 weeks and 10 hours a week, target 655." You get a week-by-week plan.
-- **Check progress:** "How am I doing?" summarises this conversation's results by question type.
+- **Check progress:** "How am I doing?" shows your results by question type. Sign in with Google or an email code to keep them across sessions.
 
 Data Insights (Data Sufficiency, Multi-Source Reasoning, Table Analysis, Two-Part Analysis, Graphics Interpretation) is available now. Quant and Verbal questions are being added.
 
@@ -20,7 +20,7 @@ Data Insights (Data Sufficiency, Multi-Source Reasoning, Table Analysis, Two-Par
 1. Open **Customize > Plugins**, select **Add**, then **Add marketplace**.
 2. Enter `Crackverbal-Main/crackverbal-gmat-plugin` and add it.
 3. Find **CrackVerbal GMAT Prep** in the list and select **Add**.
-4. Open the plugin's **Connectors** tab and connect **crackverbal-gmat**. No account or login is needed.
+4. Open the plugin's **Connectors** tab and connect **crackverbal-gmat**. Choose **Sign in when needed**: practice works without an account, and you sign in only when you want to save progress.
 5. Start a new chat and say "Help me prep for the GMAT".
 
 **In Claude Code:**
@@ -35,7 +35,7 @@ Data Insights (Data Sufficiency, Multi-Source Reasoning, Table Analysis, Two-Par
 The plugin connects to one server run by CrackVerbal at `https://crackverbal-gmat-mcp.marketing-e89.workers.dev/mcp`.
 
 - **Sent to CrackVerbal:** the section, question type and difficulty you ask for; the IDs of questions already shown in the conversation, so you don't get repeats; your answer letters and, if you give them, your times.
-- **Stored by CrackVerbal:** one anonymous row per scored question: question ID, number correct, seconds, the app's name and a timestamp. No name, email, chat text or other personal data.
+- **Stored by CrackVerbal:** one anonymous row per scored question (question ID, number correct, seconds, app name, timestamp). If you choose to sign in to save progress: your email, your name from Google if you use Google, and your saved results. No chat text.
 - **Not read:** your Claude memory, chat history or files.
 
 Answers and explanations stay on CrackVerbal's server until you submit, so Claude can't reveal them early.
