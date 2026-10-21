@@ -6,7 +6,7 @@ Free GMAT Focus practice from CrackVerbal, inside Claude. Ask in plain words and
 
 - **Get started:** "Help me prep for the GMAT." A four-question check-in routes you to the right next step.
 - **Find your weak areas:** "Where am I weak?" runs a short diagnostic, one question per question type.
-- **Practise:** "Give me 10 Data Sufficiency questions, medium." Learn mode gives feedback after each question; test mode holds it to the end.
+- **Practise:** "Give me 10 Data Sufficiency questions, medium." You solve the set timed, one question at a time, then go through every question, the way CrackVerbal runs practice.
 - **Review a miss:** "Why is my answer wrong?" walks through the question type, the trap that caught you, CrackVerbal's method and why the other options fail.
 - **Learn the method:** "How do I approach Data Sufficiency?" or "How should I read an RC passage?" gives you the steps CrackVerbal teaches in class.
 - **Analyse a mock:** share your section scores and get a CrackVerbal-style review of what to work on.
@@ -49,7 +49,7 @@ Support: TO CONFIRM before submission
 
 - **"The CrackVerbal connector isn't connected":** open Customize > Plugins > CrackVerbal GMAT Prep > Connectors and connect it.
 - **"No unseen questions match":** you've seen every question for that filter in this conversation. Try another difficulty or type, or start a new conversation.
-- **A chart doesn't show:** ask Claude to show the question again.
+- **Charts:** chart and graph questions come with a link to the original image. Open it to read the chart; Claude will not redraw it.
 
 ## License
 

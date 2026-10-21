@@ -10,7 +10,7 @@ description: Runs a short CrackVerbal GMAT diagnostic, one question per question
 1. Call `get_diagnostic_set`. Pass `sections` only if the student limited the scope; otherwise leave it out to cover every available section.
 2. If the result says some sections are not available yet, tell the student in one line which sections this diagnostic covers.
 3. Say how many questions there are and that the diagnostic works like the exam: no feedback until the end. Suggest they note how long each question takes, if they want timing in the report.
-4. Present one question at a time, exactly as the tool returned it, including any attached chart or table. Show the option letters. For questions with several parts, ask for one letter per part.
+4. Present one question at a time, exactly as the tool returned it, with its tables and option letters; show the next only after the student answers. Never paste the whole set at once. For charts and images, give the student the image link exactly as the tool wrote it; never describe, redraw, transcribe or estimate values from a chart. For questions with several parts, ask for one letter per part.
 5. Never solve, hint or comment on whether an answer is right until all answers are submitted. If the student asks for help mid-way, say you'll go through everything at the end.
 6. Collect each answer as letters. If an answer is ambiguous or missing a part, ask again for that part only.
 7. When all questions are answered, call `submit_answers` once with the `set_token` and every answer, plus `seconds` per question if the student gave times.

@@ -9,25 +9,23 @@ description: Serves CrackVerbal GMAT practice questions for a chosen section, qu
 
 Work out section, question type, difficulty and count from what the student said. Ask only for what's missing, in one line, with sensible defaults (5 questions, mixed difficulty). If unsure which types exist, call `get_catalog`.
 
-Then ask which mode they want, unless they already said:
-
-- **Learn mode** (default): feedback after each question.
-- **Test mode**: no feedback until the end, like the real exam. CrackVerbal recommends this for practice sets: solve the whole set timed, then analyse every question.
+Run it the way CrackVerbal runs practice: the student solves the set timed, one question at a time, with no feedback until the end; then you go through every question together. Don't ask the student to choose a mode. If they ask for feedback after each question, give it.
 
 Call `get_question_set` with `section`, and `question_type`, `difficulty` and `count` when known. Pass `exclude_ids` with every question ID already served in this conversation so the student doesn't see repeats.
 
 ## Run it
 
-- Present one question at a time, exactly as the tool returned it, including attached charts and tables. Keep the option letters.
+- Present one question at a time, exactly as the tool returned it, with its tables and option letters. Show the next question only after the student answers. Never paste the whole set at once.
+- Charts and images: give the student the image link exactly as the tool wrote it, so they read the original. Never describe, redraw, transcribe or estimate values from a chart, even if you can see it.
 - For multi-part questions, ask for one letter per part, in order.
 - Never solve, hint or say whether an answer is right before it is submitted.
 - If the student gives a time per question, keep it for `seconds`. Suggest they time themselves against CrackVerbal's targets: about 2 minutes per question (never more than 3); Reading Comprehension 2–3 minutes to read the passage plus about 1.5 per question; Multi-Source Reasoning 6–8 minutes per set. If they're stuck between two options, tell them what CrackVerbal tells students: choose one and move on.
 
-**Learn mode:** after each answer, call `submit_answers` with the `set_token` and that one answer. Say right or wrong. If wrong, call `get_explanation` with the returned `review_token` and teach the miss in CrackVerbal's method (see the `review` skill), briefly: the type, why their option tempted them, the method, why the right answer works. If right, a one-line "why not the others?" is optional; offer it, don't force it. Then move to the next question.
+When every answer is in, call `submit_answers` once with all of them.
+
+**If the student asked for feedback after each question:** call `submit_answers` with the `set_token` and that one answer. Say right or wrong. If wrong, call `get_explanation` with the returned `review_token` and teach the miss in CrackVerbal's method (see the `review` skill), briefly: the type, why their option tempted them, the method, why the right answer works. If right, a one-line "why not the others?" is optional; offer it, don't force it. Then move to the next question.
 
 The first time a student practises a type in this conversation, you can call `get_method` for that type and share its steps in three or four lines before the first question, if they want them.
-
-**Test mode:** collect every answer, then call `submit_answers` once with all of them.
 
 ## Wrap up
 
