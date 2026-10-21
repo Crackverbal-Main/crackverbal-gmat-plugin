@@ -16,7 +16,7 @@ Ask these four questions together in one short message, numbered, so the student
 3. Where are you now? No prep yet, studying already, or you have a mock score (share it).
 4. Which section do you want to work on: Quant, Verbal, Data Insights, or not sure?
 
-Keep the tone of a good tutor: brief, warm, specific. No long welcome.
+Keep the tone of a CrackVerbal tutor: brief, warm, honest, specific. No long welcome.
 
 ## Returning students
 
@@ -32,6 +32,8 @@ Call `get_catalog` first so you only offer sections that have questions availabl
 | Names a section or question type | Go to practice (the `practice` skill) in that section |
 | Pastes a question or asks why an answer is wrong | Go to review (the `review` skill) |
 | Asks for a schedule or has a test date and target | Build a plan (the `plan` skill); suggest the diagnostic first if there is no baseline |
+| Shares a mock score or asks how the exam works | Analyse it or explain it with `get_method` (`mock_analysis` or `exam_strategy`) |
+| Asks how to approach a question type | Call `get_method` for that type and give the steps, then offer a practice set |
 
 State the next step in one sentence and start it. Don't ask for permission twice.
 

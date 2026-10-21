@@ -22,7 +22,7 @@ Lead with the result in one line: score and the weakest question type. Then a co
 | Question type | Result | Time vs target |
 |---|---|---|
 
-Then two or three sentences on what the pattern suggests, using only the numbers returned. One question per type is a small sample: say so, and recommend a focused practice set on the weakest type to confirm it.
+Then two or three sentences on what the pattern suggests, using only the numbers returned. Lead with what went well, the way CrackVerbal's faculty review a mock, then the gaps. One question per type is a small sample: say so, and recommend a focused practice set on the weakest type to confirm it.
 
 Keep the `review_token`. Offer to walk through any missed question; when they accept, call `get_explanation` with the `review_token` and the question ID, and teach it the way the `review` skill describes.
 

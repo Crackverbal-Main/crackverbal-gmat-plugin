@@ -7,7 +7,9 @@ Free GMAT Focus practice from CrackVerbal, inside Claude. Ask in plain words and
 - **Get started:** "Help me prep for the GMAT." A four-question check-in routes you to the right next step.
 - **Find your weak areas:** "Where am I weak?" runs a short diagnostic, one question per question type.
 - **Practise:** "Give me 10 Data Sufficiency questions, medium." Learn mode gives feedback after each question; test mode holds it to the end.
-- **Review a miss:** "Why is my answer wrong?" walks through what the question tests, the trap and the method.
+- **Review a miss:** "Why is my answer wrong?" walks through the question type, the trap that caught you, CrackVerbal's method and why the other options fail.
+- **Learn the method:** "How do I approach Data Sufficiency?" or "How should I read an RC passage?" gives you the steps CrackVerbal teaches in class.
+- **Analyse a mock:** share your section scores and get a CrackVerbal-style review of what to work on.
 - **Plan:** "I have 8 weeks and 10 hours a week, target 655." You get a week-by-week plan.
 - **Check progress:** "How am I doing?" shows your results by question type. Sign in with Google or an email code to keep them across sessions.
 

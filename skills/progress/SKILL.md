@@ -17,6 +17,8 @@ Lead with one line: questions done and overall accuracy. Then a table, weakest f
 
 Without sign-in, add up the `submit_answers` results in this conversation by question type: attempted, correct, accuracy, and time against target where given. Same table. With fewer than 3 questions in a type, say the sample is too small to judge.
 
+If the student shares a mock score or section scores, analyse it the CrackVerbal way: call `get_method` with topic `mock_analysis` and go through it in that order, starting with the positives.
+
 End with options: a practice set on the focus type, review of misses, or a study plan.
 
 ## If there are no results yet
