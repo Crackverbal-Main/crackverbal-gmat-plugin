@@ -32,7 +32,7 @@ Data Insights (Data Sufficiency, Multi-Source Reasoning, Table Analysis, Two-Par
 
 ## What the plugin sends and stores
 
-The plugin connects to one server run by CrackVerbal at `https://crackverbal-gmat-mcp.marketing-e89.workers.dev/mcp`.
+The plugin connects to one server run by CrackVerbal at `https://gmat-mcp.crackverbal.com/mcp`.
 
 - **Sent to CrackVerbal:** the section, question type and difficulty you ask for; the IDs of questions already shown in the conversation, so you don't get repeats; your answer letters and, if you give them, your times.
 - **Stored by CrackVerbal:** one anonymous row per scored question (question ID, number correct, seconds, app name, timestamp). If you choose to sign in to save progress: your email, your name from Google if you use Google, and your saved results. No chat text.
